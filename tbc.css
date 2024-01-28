@@ -172,7 +172,7 @@ header.isHeaderHidden {
   padding-top: 20px;
   flex-direction: column;
   justify-content: space-between;
-  width: 32px;
+  width: 22px;
   height: 32px;
   position: relative;
   left: 100%;
@@ -535,13 +535,58 @@ header.isHeaderHidden {
 }
 
 .terms-container {
-  padding: 50px;
+  padding: 20px;
+  padding-inline: 60px;
 }
 
 .terms-container:first-child {
   display: flex;
   justify-content: flex-end;
   padding: 15px 30px;
+}
+
+.terms-container h2 {
+  color: #8C8C8C;
+  padding-bottom: 12px;
+}
+
+.terms-container h3 {
+  color: #8C8C8C;
+  padding-block: 10px;
+}
+
+.terms-container p {
+  color: #8C8C8C;
+  padding-block: 10px;
+}
+.terms-container p a{
+  color: #8C8C8C;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.terms-container h4 a{
+  color: #8C8C8C;
+}
+
+.terms-container h4{
+  color: #8C8C8C;
+}
+
+.terms-container button {
+  margin-top: 90px;
+  margin-bottom: -10px;
+  background: #DBDBDB;
+  border-radius: 5px;
+  color: #1C1C1C;
+  padding: 17px 42%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.terms-container button:hover {
+  color: #FFFFFF;
+  background-color: #46aff3;
 }
 
 .tbc_image {
@@ -576,6 +621,11 @@ header.isHeaderHidden {
   .hero-data {
     padding-block: 65px 75px;
   }
+  
+  .terms-and-conditions-block {
+    width: 80%;
+    overflow-y: auto;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -585,6 +635,11 @@ header.isHeaderHidden {
 
   .container {
     padding-inline: 40px;
+  }
+
+  .terms-and-conditions-block {
+    width: 80%;
+    overflow-y: auto;
   }
 }
 
@@ -625,7 +680,8 @@ header.isHeaderHidden {
   }
 
   .terms-and-conditions-block {
-    width: 500px;
+    width: 700px;
+    overflow-y: auto;
   }
 
   .terms-and-conditions-block .close-icon {

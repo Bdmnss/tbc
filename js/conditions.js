@@ -2,6 +2,7 @@ const termsAndConditionsLinks = document.querySelectorAll('.terms-and-conditions
 const termsAndConditionsBlock = document.querySelector('.terms-and-conditions-block');
 const overlay = document.querySelectorAll('.overlay');
 const termsCloseIcon = document.querySelector('.terms-and-conditions-block .close-icon');
+const termsCloseButton = document.querySelector('.terms-container .close-button')
 
 termsAndConditionsLinks.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -17,6 +18,11 @@ overlay[1].addEventListener('click', () => {
 });
 
 termsCloseIcon.addEventListener('click', () => {
+    termsAndConditionsBlock.classList.remove('isOpened')
+    overlay[1].classList.remove('isOpened', 'terms')
+});
+
+termsCloseButton.addEventListener('click', () => {
     termsAndConditionsBlock.classList.remove('isOpened')
     overlay[1].classList.remove('isOpened', 'terms')
 });
